@@ -26,7 +26,7 @@ class Manager(Employee):
 		Employee.__init__(self,name ,age,salary ,year)
 		self.bonus_percentage=bonus_percentage
 	def __str__(self):
-		return "Name:%s , Age: %s ,Salary:%d,Working Years: %d ,bonus: %d" % (self.name, self.age,int(self.salary), self.get_working_years(), self.get_bonus())
+		return "Name:%s , Age: %s ,Salary:%d,Working Years: %d ,bonus: %.2f" % (self.name, self.age,int(self.salary), self.get_working_years(),float( self.get_bonus()))
 
 #super().__str__()+ f'
 
