@@ -42,7 +42,7 @@ class Manager(Employee):
 def main():
 	# main code here
 
-				print ("Welcome to HR Pro 2019")
+				#print ("Welcome to HR Pro 2019")
 				print("Options:")
 				print("1. Show Employees")
 				print("2. Show Managers")
