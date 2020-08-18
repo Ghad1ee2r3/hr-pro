@@ -37,12 +37,12 @@ class Manager(Employee):
 		today=today.year
 		return today - self.employment_year
 	def get_bonus(self):
-		return self.bonus_percentage * self.salary
+		return float( self.bonus_percentage * self.salary)
 
 def main():
 	# main code here
 
-				#print ("Welcome to HR Pro 2019")
+				print ("Welcome to HR Pro 2019")
 				print("Options:")
 				print("1. Show Employees")
 				print("2. Show Managers")
@@ -59,6 +59,7 @@ def main():
 						print(" ")
 						for i in listem:
 							print (i.__str__())
+						print("-----------------")
 					   #p = Person('Pankaj', 34)
 
 				#print(p.__repr__())
@@ -68,6 +69,7 @@ def main():
 						print(" ")
 						for i in listm:
 							print (i.__str__())
+						print("-----------------")
 
 					elif n=="3":
 						name=input("name")
@@ -88,7 +90,7 @@ def main():
 						listm.append(obj1)
 						print("Manager added succesfully")
 					#elif n=="5":
-					print ("Welcome to HR Pro 2019")
+					#print ("Welcome to HR Pro 2019")
 					print("Options:")
 					print("1. Show Employees")
 					print("2. Show Managers")
